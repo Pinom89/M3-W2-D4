@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>M3 w2 d4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+  <body>
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img src="asset/alpitour.png" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.skyscanner.it/">Confronta i prezzi</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Vai..
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#offerte">Offerte del mese</a></li>
+                  <li><a class="dropdown-item" href="#mete">Mete richieste</a></li>
+                  <li><a class="dropdown-item" href="#recensioni">Recensioni</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Ricerca" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Ricerca</button>
+              <a class="link-secondary me-3 align-items-center my-2 mx-2" href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Parte iniziale-->
+      <div class="container text-center mb-5">
+        <div class="row">
+          <div class="col">
+            <div class="carousel-item active">
+                <img src="asset/camper.avif" class="d-block mx-auto" style="max-height: 600px;" alt="Camper"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="color2">Viaggiare con stile</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- offerte del mese -->
+
+    
+      <div class="container mb-5 m-sm-auto mt-3" id="offerte">
+        <div class="row g-sm-2 g-3 g-md-3 g-xl-3  ">
+            <h1 style="text-align: center; height: 60px;">
+                Offerte del mese
+            </h1>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="asset/new york.jpeg" class="card-img-top" alt="New york" height="180" >
+                    <div class="card-body">
+                      <h5 class="card-title">Parti per la Grande mela</h5>
+                     <a href="#" class="btn btn-primary">Visita New york</a>
+                    </div>
+                </div>
+            </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="asset/cuba.jpg" class="card-img-top" alt="Cuba" height="180">
+                        <div class="card-body">
+                        <h5 class="card-title">Cuba</h5>
+                        <a href="#" class="btn btn-primary">Vista Cuba</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="asset/zanzibar.jpg" class="card-img-top" alt="Zanzibar" height="180">
+                        <div class="card-body">
+                        <h5 class="card-title">Rilassati in riva al mare</h5>
+                        <a href="#" class="btn btn-primary">Visita Zanzibar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="asset/Macchu Piccu.jpg" class="card-img-top" alt="Macchu Piccu" height="180">
+                        <div class="card-body">
+                        <h5 class="card-title">Scopri Macchu Piccu</h5>
+                        <a href="#" class="btn btn-primary">Visita il Perù</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+
+      <div class="container mt-4 h-80 ">
+        <div class="row text-sm-center g-4 pt-3">
+            <div class="col-lg-3 ">
+                <input type="text" class="form-control" placeholder="Dove vuoi andare?" aria-label="Recipient's username" aria-describedby="button-addon2">
+            </div>
+            <div class="col-lg-3 ">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Tipo di vacanza" aria-label="Text input with dropdown button">
+                    <button class="dropdown-toggle btn btn-outline-primary" type="button" data-bs-toggle="dropdown" aria-expanded="false">Esempio</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Relax</a></li>
+                      <li><a class="dropdown-item" href="#">Divertimento</a></li>
+                      <li><a class="dropdown-item" href="#">In famiglia</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-lg-3 ">
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                      <option selected>Numero di Persone...</option>
+                      <option value="1">1 Persona</option>
+                      <option value="2">2 Persone</option>
+                      <option value="3">3 Persone</option>
+                      <option value="4">4 Persone</option>
+                      <option value="5">5 Persone</option>
+                      <option value="6">6 Persone</option>
+                      <option value="max">7 Persone</option>
+                    </select>
+                    <label class="input-group-text btn btn-outline-primary" for="inputGroupSelect02">Aggiungi</label>
+                  </div>
+                  
+            </div>
+            <div class="col-lg-3 bodo">
+                <div class="input-group mb-3">
+                    <label for="data" class="form-label mt-2 me-1 ">Data:</label>
+                    <input type="date" id="data" name="data" class="form-control bordo">
+                </div>
+            </div>
+        </div>
+      </div>
+
+     
+
+     
+
+<!-- Carosello -->
+
+<div class="container mb-3" id="mete">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center">Mete più richieste</h2>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="asset/Le Piramidi, Egitto.webp" class="d-block w-100" alt="Piramidi Egitto"/>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Piramidi Egitto</h5>
+                      <p>Antica grandezza che sfida il tempo e incanta l'umanità con il mistero della loro imponente presenza nel deserto.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="asset/Il Pamukkale, Turchia.webp" class="d-block w-100" alt="Il Pamukkale, Turchia"/>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="color">Il Pamukkale, Turchia</h5>
+                      <p class="color">Le sue acque termali e le formazioni calcaree uniche, incanta i visitatori con la sua bellezza.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="asset/Petra, Giordania.webp" class="d-block w-100" alt="Petra, Giordania"/>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="color">Petra, Giordania</h5>
+                      <p class="color">Città millenaria scolpita nella roccia, dove la storia si fonde con la maestosità delle sue rovine rosse.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="asset/Negril, Giamaica.webp" class="d-block w-100" alt="Negril, Giamaica"/>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="color">Negril, Giamaica</h5>
+                      <p class="color">La maestosa scogliera si fonde con le acque cristalline, regalando tramonti indimenticabili lungo la celebre Seven Miles Beach.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="asset/Taj Mahal, India.webp" class="d-block w-100" alt="Taj Mahal, India"/>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Taj Mahal, India</h5>
+                      <p>Sospesa nel tempo, testimonia l'eterno amore che ha ispirato la sua creazione..</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Fine Carosello --> 
+
+<!-- collaplse -->
+<div class="container" id="recensioni" >
+    <div class="row">
+        <div class="col-12">
+    <p class="text-center ">
+        <button class="btn btn-primary mt-3" type="button"id="toggleButton" aria-expanded="false" aria-controls="collapseWidthExample">
+            Controlla le nostre Recensioni
+        </button>
+    </p>
+        <div style="min-height: 120px;">
+            <div class="collapse" id="collapseWidthExample">
+                <div class="row row-gap-sm-3 row-gap-4  ">
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <div style="width: 300px;">
+                            "La mia esperienza con l'agenzia di viaggi è stata eccezionale! Prenotare online sul loro sito è stato semplice e intuitivo. 
+                            Ho trovato tutte le informazioni di cui avevo bisogno per organizzare la mia vacanza in modo rapido e senza problemi. 
+                            Il servizio clienti è stato impeccabile, rispondendo prontamente a tutte le mie domande e fornendo assistenza personalizzata. 
+                            Grazie all'efficienza e alla professionalità dell'agenzia, ho potuto godermi una vacanza indimenticabile
+                            Consiglio vivamente questo sito a tutti coloro che cercano un'esperienza di viaggio senza stress e piena di soddisfazioni!"
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <div style="width: 300px;">
+                            "La mia esperienza con l'agenzia di viaggi è stata eccezionale! Prenotare online sul loro sito è stato semplice e intuitivo. 
+                            Ho trovato tutte le informazioni di cui avevo bisogno per organizzare la mia vacanza in modo rapido e senza problemi. 
+                            Il servizio clienti è stato impeccabile, rispondendo prontamente a tutte le mie domande e fornendo assistenza personalizzata. 
+                            Grazie all'efficienza e alla professionalità dell'agenzia, ho potuto godermi una vacanza indimenticabile
+                            Consiglio vivamente questo sito a tutti coloro che cercano un'esperienza di viaggio senza stress e piena di soddisfazioni!"
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <div style="width: 300px;">
+                            "La mia esperienza con l'agenzia di viaggi è stata eccezionale! Prenotare online sul loro sito è stato semplice e intuitivo. 
+                            Ho trovato tutte le informazioni di cui avevo bisogno per organizzare la mia vacanza in modo rapido e senza problemi. 
+                            Il servizio clienti è stato impeccabile, rispondendo prontamente a tutte le mie domande e fornendo assistenza personalizzata. 
+                            Grazie all'efficienza e alla professionalità dell'agenzia, ho potuto godermi una vacanza indimenticabile
+                            Consiglio vivamente questo sito a tutti coloro che cercano un'esperienza di viaggio senza stress e piena di soddisfazioni!"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+ <!-- richiedi assistenza --> 
+
+<!-- Button trigger modal -->   
+<button type="button" class="btn btn-danger btn-rounded my-3 mx-5 mb-3" data-mdb-ripple-init>
+  Richiedi assistenza
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Richiesta assistenza</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Vuoi chattare con un nostro consulente per supporto?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        <button type="button" class="btn btn-primary">Chatta con noi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!--Parte finale-->
+
+      <!-- Grid container -->
+      <div class="container p-4 pb-0 d-flex justify-content-around">
+        <form action="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-5 mb-4 mb-md-0">
+              <p class="pt-2">
+                <strong>Iscriviti alla nostra newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12 mb-4 mb-md-0">
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form5Example22" class="form-control" placeholder="Inserisci Email..." />
+                <label class="form-label" for="form5Example22"></label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-2 mb-4 mb-md-0">
+              <!-- Submit button -->
+              <button data-mdb-ripple-init type="button" class="btn btn-primary mb-4">
+                Sottoscrivi
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </div>
+      <!-- Grid container -->   
+
+
+<footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+        data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #dd4b39;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #333333;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">www.alpitour.it</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+<script src="https://kit.fontawesome.com/fb4330e93e.js" crossorigin="anonymous"></script>
+<Script src="script.js"></Script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
